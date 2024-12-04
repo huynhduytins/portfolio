@@ -51,39 +51,38 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Bubble Game with small viewport modal",
     image: bubbleGame,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A simple bubble game where players can click on bubbles to hide them. Let play it inside a dialog which can turn into drawer on small viewport.",
+    technologies: ["React", "React Aria", "Framer Motion"],
   },
   {
-    title: "Task Management App",
+    title: "Owwi Travel",
     image: travelNest,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A travel booking platform where users can search for homestay and holtel. Users can also create accounts, save bookings, and leave reviews.",
+    technologies: ["NextJS", "Prisma", "MongoDB", "TailwindCSS", "OpenAI"],
   },
   {
-    title: "Portfolio Website",
+    title: "Owwi Money",
     image: owwiMoney,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A personal finance app that helps users track their spending, set budgets, and view reports. Users can also create accounts and save transactions.",
+    technologies: ["NextJS", "NodeJS", "MongoDB", "TailwindCSS"],
   },
   {
-    title: "Blogging Platform",
+    title: "Dev Overflow",
     image: stackOverflow,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A question and answer platform for developers. Users can ask questions, provide answers, and upvote helpful responses.",
+    technologies: ["NextJS", "MongoDB", "TailwindCSS"],
   },
   {
-    title: "Blogging Platform",
+    title: "Swap Coin",
     image: swapCoin,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    description: "A basic coin swap form.",
+    technologies: ["React", "TailwindCSS"],
   },
 ];
 

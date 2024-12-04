@@ -9,7 +9,7 @@ const Logo = () => {
     <Link href="/" className="relative flex items-center justify-center">
       <Image src="/favicon.ico" alt="logo" width={50} height={50} priority />
       <motion.svg
-        className="absolute inset-0 w-[55px]"
+        className="absolute w-[55px]"
         fill="transparent"
         viewBox="0 0 506 506"
       >
@@ -18,7 +18,7 @@ const Logo = () => {
           cy="253"
           r="250"
           stroke="#00ff99"
-          strokeWidth="4"
+          strokeWidth="10"
           strokeLinecap="round"
           strokeLinejoin="round"
           initial={{ strokeDasharray: "24 10 0 0" }}
