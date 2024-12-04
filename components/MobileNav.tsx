@@ -2,13 +2,13 @@
 
 import { LINKS } from "@/constants";
 import { motion } from "framer-motion";
-import { use, useState } from "react";
+import { useState } from "react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
+import Socials from "./Socials";
 
 const MobileNav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -85,15 +85,7 @@ const MobileNav = () => {
             ))}
           </motion.ul>
           <div className="mt-28 flex justify-center gap-8">
-            <Link href="https://www.linkedin.com/in/tin-nguyen-1b1b1b1b1/">
-              <FaLinkedin className="hover:text-accent text-[25px]" />
-            </Link>
-            <Link href="">
-              <FaGithub className="hover:text-accent text-[25px]" />
-            </Link>
-            <Link href="">
-              <FaFacebook className="hover:text-accent text-[25px]" />
-            </Link>
+            <Socials />
           </div>
         </SheetContent>
       </Sheet>

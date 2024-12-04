@@ -8,8 +8,8 @@ export interface ITypeWriterProps {
 }
 
 function TypeWriter({ delay }: ITypeWriterProps) {
-  const [done, setDone] = useState(false);
-  const baseText = "Hello my name is Duy Tin. ";
+  const [_, setDone] = useState(false);
+  const baseText = "Hi ✌️, my name is Duy Tin. ";
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
@@ -31,11 +31,13 @@ function TypeWriter({ delay }: ITypeWriterProps) {
   }, []);
 
   return (
-    <span className="">
-      <motion.span className="text-lg font-semibold">{displayText}</motion.span>
-      <RedoAnimText delay={delay + 1} />
-      <CursorBlinker />
-    </span>
+    <>
+      <motion.h2 className="h2 mb-6">{displayText}</motion.h2>
+      <div>
+        <RedoAnimText delay={delay + 2} />
+        <CursorBlinker />
+      </div>
+    </>
   );
 }
 
@@ -69,6 +71,7 @@ export interface IRedoAnimTextProps {
 function RedoAnimText({ delay }: IRedoAnimTextProps) {
   const textIndex = useMotionValue(0);
   const texts = [
+    "I come from Vietnam 🇻🇳",
     "I am a Frontend Developer",
     "I am a Full-stack Developer",
     "I am focusing on researching website optimization",

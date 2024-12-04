@@ -1,16 +1,12 @@
-import Link from "next/link";
 import Nav from "./Nav";
-import Image from "next/image";
-import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-2 text-white mt-4">
+    <header className="p-8 xl:py-2 text-white mt-4 sticky top-0 w-full bg-primary">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/">
-          <Image src="/favicon.ico" alt="logo" width={50} height={50} />
-        </Link>
+        <Logo />
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
         </div>
