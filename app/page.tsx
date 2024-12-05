@@ -4,6 +4,7 @@ import Technologies from "@/components/Technologies";
 import TypeWriter from "@/components/TypeWriter";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
@@ -14,14 +15,19 @@ export default function Home() {
           <div className="text-center xl:text-left">
             <TypeWriter delay={1} />
             <div className="mt-16 flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <Link
+                href="/files/CV-Frontend-HuynhDuyTin.pdf"
+                download="CV-Frontend-HuynhDuyTin.pdf"
               >
-                <span>Dowload CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Dowload CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
               <div className="mb-8 xl:mb-0 flex gap-6">
                 <Socials />
               </div>
