@@ -62,7 +62,7 @@ const Photo = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative w-[298px] h-[298px] xl:w-[458px] xl:h-[458px] rounded-xl bg-gradient-to-br from-accent to-accent-hover"
+      className="relative w-[298px] h-[298px] xl:w-[458px] xl:h-[458px] rounded-xl bg-gradient-to-br from-accent to-accent-hover z-10"
     >
       <div
         style={{

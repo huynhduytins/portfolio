@@ -6,7 +6,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb, SiWebpack } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { GrDocker } from "react-icons/gr";
-import { SiNestjs } from 'react-icons/si';
+import { SiNestjs } from "react-icons/si";
 
 const iconVariants = (duration: number): Variants => ({
   initial: { y: -10 },
@@ -28,7 +28,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="h3 mb-12 mt-8"
+        className="mt-20 mb-16 text-center text-4xl"
       >
         Technologies
       </motion.p>

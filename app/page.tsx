@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="h-full flex flex-col xl:flex-row items-center justify-between p-8 xl:pt-12">
+        <div className="h-full flex flex-col xl:flex-row items-center justify-between p-8 pb-4 xl:pt-12">
           <div className="text-center xl:text-left">
             <TypeWriter delay={1} />
             <div className="mt-16 flex flex-col xl:flex-row items-center gap-8">
