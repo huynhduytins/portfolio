@@ -16,8 +16,8 @@ export default function Home() {
             <TypeWriter delay={1} />
             <div className="mt-16 flex flex-col xl:flex-row items-center gap-8">
               <Link
-                href="/files/CV-Frontend-HuynhDuyTin.pdf"
-                download="CV-Frontend-HuynhDuyTin.pdf"
+                href="/files/CV-Frontend-Huynh_Duy_Tin.pdf"
+                download="CV-Frontend-Huynh_Duy_Tin.pdf"
               >
                 <Button
                   variant="outline"
