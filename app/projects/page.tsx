@@ -6,6 +6,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaLink, FaGithub } from "react-icons/fa";
 
+const imageVariants = {
+  beforeHover: {},
+  onHover: { scale: 1.4 },
+};
+
 const Projects = () => {
   return (
     <section className="container mx-auto h-full pt-8 xl:pt-12 p-8">
@@ -19,16 +24,21 @@ const Projects = () => {
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
+              whileHover="onHover"
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              className={`w-full lg:w-1/4 rounded-[5px] bg-accent overflow-hidden relative`}
             >
-              <Image
+              <motion.div
+                variants={imageVariants}
+                className="absolute top-0 left-0 w-full h-full bg-[url('./../public/projects/travel-nest.png')] bg-no-repeat bg-center bg-contain"
+              />
+              {/* <Image
                 src={project.image}
                 alt={project.title}
                 width={400}
                 height={300}
                 className="mb-6 rounded"
-              />
+              /> */}
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

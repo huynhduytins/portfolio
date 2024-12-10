@@ -3,6 +3,7 @@ import owwiMoney from "@/public/projects/owwi-money.png";
 import stackOverflow from "@/public/projects/stack-overflow.png";
 import swapCoin from "@/public/projects/swap-coin.png";
 import travelNest from "@/public/projects/travel-nest.png";
+import orderPizza from "@/public/projects/order-pizza.png";
 
 export const LINKS = [
   { name: "home", path: "/" },
@@ -73,42 +74,50 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Bubble Game with small viewport modal",
-    image: bubbleGame,
+    image: "./../public/projects/order-pizza.png",
     description:
       "A simple bubble game where players can click on bubbles to hide them. Let play it inside a dialog which can turn into drawer on small viewport.",
     technologies: ["React", "React Aria", "Framer Motion"],
     link: "https://game-with-small-viewport-modal.vercel.app/",
   },
-  {
-    title: "Owwi Travel",
-    image: travelNest,
-    description:
-      "A travel booking platform where users can search for homestay and holtel. Users can also create accounts, save bookings, and leave reviews.",
-    technologies: ["NextJS", "Prisma", "MongoDB", "TailwindCSS", "OpenAI"],
-    link: "https://travel.owwi.io.vn/",
-  },
-  {
-    title: "Owwi Money",
-    image: owwiMoney,
-    description:
-      "A personal finance app that helps users track their spending, set budgets, and view reports. Users can also create accounts and save transactions.",
-    technologies: ["NextJS", "NodeJS", "MongoDB", "TailwindCSS"],
-    link: "https://owwimoney.vercel.app/",
-  },
-  {
-    title: "Dev Overflow",
-    image: stackOverflow,
-    description:
-      "A question and answer platform for developers. Users can ask questions, provide answers, and upvote helpful responses.",
-    technologies: ["NextJS", "MongoDB", "TailwindCSS"],
-  },
-  {
-    title: "Swap Coin",
-    image: swapCoin,
-    description: "A basic coin swap form.",
-    technologies: ["React", "TailwindCSS"],
-    link: "https://fancy-swap-coin-form.vercel.app/",
-  },
+  // {
+  //   title: "Order Pizza (React 19)",
+  //   image: orderPizza,
+  //   description:
+  //     "A pizza ordering app where users can select a pizza size and toppings. Users can also create accounts, save orders, and view order history.",
+  //   technologies: ["React", "Tanstack"],
+  //   link: "#",
+  // },
+  // {
+  //   title: "Owwi Travel",
+  //   image: travelNest,
+  //   description:
+  //     "A travel booking platform where users can search for homestay and holtel. Users can also create accounts, save bookings, and leave reviews.",
+  //   technologies: ["NextJS", "Prisma", "MongoDB", "TailwindCSS", "OpenAI"],
+  //   link: "https://travel.owwi.io.vn/",
+  // },
+  // {
+  //   title: "Owwi Money",
+  //   image: owwiMoney,
+  //   description:
+  //     "A personal finance app that helps users track their spending, set budgets, and view reports. Users can also create accounts and save transactions.",
+  //   technologies: ["NextJS", "NodeJS", "MongoDB", "TailwindCSS"],
+  //   link: "https://owwimoney.vercel.app/",
+  // },
+  // {
+  //   title: "Dev Overflow",
+  //   image: stackOverflow,
+  //   description:
+  //     "A question and answer platform for developers. Users can ask questions, provide answers, and upvote helpful responses.",
+  //   technologies: ["NextJS", "MongoDB", "TailwindCSS"],
+  // },
+  // {
+  //   title: "Swap Coin",
+  //   image: swapCoin,
+  //   description: "A basic coin swap form.",
+  //   technologies: ["React", "TailwindCSS"],
+  //   link: "https://fancy-swap-coin-form.vercel.app/",
+  // },
 ];
 
 export const ROTATION_RANGE = 32.5;
