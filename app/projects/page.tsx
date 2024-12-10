@@ -1,10 +1,9 @@
 "use client";
 
 import { PROJECTS } from "@/constants";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaLink, FaGithub } from "react-icons/fa";
+import { BiLinkExternal } from "react-icons/bi";
 
 const imageVariants = {
   beforeHover: {},
@@ -19,26 +18,22 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-8 flex gap-16 flex-wrap lg:justify-center"
+            className="mb-8 flex gap-8 xl:gap-16 flex-wrap lg:justify-center"
           >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               whileHover="onHover"
               transition={{ duration: 1 }}
-              className={`w-full lg:w-1/4 rounded-[5px] bg-accent overflow-hidden relative`}
+              className={`w-full max-w-96 lg:w-1/4 min-h-44 rounded bg-white overflow-hidden relative`}
             >
               <motion.div
                 variants={imageVariants}
-                className="absolute top-0 left-0 w-full h-full bg-[url('./../public/projects/travel-nest.png')] bg-no-repeat bg-center bg-contain"
+                style={{
+                  backgroundImage: `url('${project.image}')`,
+                }}
+                className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-contain"
               />
-              {/* <Image
-                src={project.image}
-                alt={project.title}
-                width={400}
-                height={300}
-                className="mb-6 rounded"
-              /> */}
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -51,6 +46,7 @@ const Projects = () => {
                 href={project.link || ""}
               >
                 {project.title}
+                <BiLinkExternal className="inline-block ml-2" />
               </Link>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((technology, index) => (

@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Technologies from "@/components/Technologies";
@@ -36,6 +37,7 @@ export default function Home() {
           <Photo />
         </div>
         <Technologies />
+        <Experience />
       </div>
     </section>
   );

@@ -15,10 +15,14 @@ const About = () => {
       </div>
       <div className="flex flex-col gap-8 px-14">
         <p>
-          Hi, my name is <TextHighlight text="Tin" />, I&apos;m 23 years old. I
-          got a bachelor of Electronics and Communications Engineering at VNU
-          University of Science Ho Chi Minh (2019 - 2023). Besides, I am really
-          passionate about <TextHighlight text="Javascript" /> and{" "}
+          Hi, I am <TextHighlight text="Tin" />, I&apos;m 23 years old. I got a
+          bachelor of{" "}
+          <span className="text-accent">
+            Electronics and Communications Engineering
+          </span>{" "}
+          at <span className="text-accent">HCM University of Science</span> -
+          HCMUS (2019 - 2023). Besides, I am really passionate about{" "}
+          <TextHighlight text="Javascript" /> and{" "}
           <TextHighlight text="Web Development" />.
         </p>
         <p>
