@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { RiReactjsLine, RiRemixRunFill, RiVuejsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandRedux } from "react-icons/tb";
 import { SiMongodb, SiWebpack } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { GrDocker } from "react-icons/gr";
@@ -47,7 +47,15 @@ const Technologies = () => {
           <RiReactjsLine className="text-6xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(1.2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-accent p-4"
+        >
+          <TbBrandRedux className="text-6xl text-purple-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1.4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -55,7 +63,7 @@ const Technologies = () => {
           <TbBrandNextjs className="text-6xl " />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(1.6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -63,7 +71,7 @@ const Technologies = () => {
           <RiRemixRunFill className="text-6xl" />
         </motion.div>
         <motion.div
-          variants={iconVariants(4)}
+          variants={iconVariants(1.8)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -71,7 +79,7 @@ const Technologies = () => {
           <RiVuejsLine className="text-6xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(5)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -79,7 +87,7 @@ const Technologies = () => {
           <SiWebpack className="text-6xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(2.2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -87,7 +95,7 @@ const Technologies = () => {
           <FaNodeJs className="text-6xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(7)}
+          variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -95,7 +103,7 @@ const Technologies = () => {
           <SiNestjs className="text-6xl text-red-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(8)}
+          variants={iconVariants(2.6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
@@ -103,7 +111,7 @@ const Technologies = () => {
           <SiMongodb className="text-6xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(9)}
+          variants={iconVariants(2.8)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-accent p-4"
