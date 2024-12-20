@@ -7,7 +7,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/" className="relative flex items-center justify-center">
-      <Image src="/favicon.ico" alt="logo" width={50} height={50} priority />
+      <Image src="/logo.webp" alt="logo" width={50} height={50} priority />
       <motion.svg
         className="absolute w-[55px]"
         fill="transparent"
