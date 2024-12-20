@@ -98,6 +98,13 @@ export const PROJECTS = [
     link: "https://owwimoney.vercel.app/",
   },
   {
+    title: "Apple store",
+    image: "/projects/apple-store.png",
+    description: "A 3D apple store",
+    technologies: ["React", "Webgi"],
+    link:"https://store-pink-theta.vercel.app/"
+  },
+  {
     title: "Dev Overflow",
     image: "/projects/stack-overflow.png",
     description:

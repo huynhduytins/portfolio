@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         primary: "var(--font-jetbrainsMono)",
+        emoji:  ['Noto Color Emoji', 'Segoe UI Emoji', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

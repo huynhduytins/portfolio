@@ -12,11 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Duy Tin dev",
   description: "Duy Tin's personal website",
+  metadataBase: new URL("https://www.duytin.works/"),
   openGraph: {
     title: "Duy Tin Dev",
     description:
       "Explore Duy Tin's personal website with projects, blogs, and insights.",
-    url: "https://www.duytin.works/",
     siteName: "Duy Tin Dev",
     images: [
       {
