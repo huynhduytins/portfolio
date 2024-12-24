@@ -34,7 +34,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "12/2022 - 06/2023",
+    year: "12/2022 - 06/2024",
     role: "Frontend Developer",
     company: "Shinhan DS",
     description:
