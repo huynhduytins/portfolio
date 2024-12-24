@@ -13,7 +13,7 @@ const imageVariants = {
 const Projects = () => {
   return (
     <section className="container mx-auto h-full pt-8 xl:pt-12 p-8">
-      <h1 className="my-20 text-center text-4xl">Projects</h1>
+      <h1 className="my-20 text-center text-4xl">My Side Projects</h1>
       <div>
         {PROJECTS.map((project, index) => (
           <div
